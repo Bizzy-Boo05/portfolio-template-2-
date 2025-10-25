@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio 2025 | Priyanshi</title>
+    <link rel="stylesheet" href="style.css">
+    <!--faviconpng-->
+  <link rel="icon" href="./Gemini_Generated_Image_a2lbh5a2lbh5a2lb.png"  style="border-radius: 50%;" type="image/png">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+<body>
+    <style>
+       :root{
+      --emerald: #18422c;           /* emerald green */
+      --mustard: #d69e2e;          /* warm/dark yellow tint */
+      --cream: #f6efe6;            /* cream background */
+      --muted: #6b6b6b;
+      --dark: #0b0b0b;
+      --glass: rgba(255,255,255,0.45);
+    }
+        /* Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(#00000000,#f1d9a4b6,#0a0a0a86); /* cream background */
+  color: #111;
+  line-height: 1.6;
+  position: relative;
+  overflow-x: hidden;
+ 
+}
+
+/* Plastic overlay */
+.plastic-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("./Clear\ Plastic\ Vinyl\ -\ Gauge\ 8.jpeg") ;
+  opacity: 10;
+  pointer-events: none;
+  mix-blend-mode: multiply;
+  z-index: 1000;
+  background-repeat: no-repeat  center center fixed; background-size: cover ; background-position: center ;
+}
+
+/* Cover Section */
+.cover {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+.cover h1 {
+  font-size: 6rem;
+  font-weight: 800;
+  line-height: 0.9;
+  letter-spacing: -2px;
+}
+.cover h1 span {
+  color: #dbb106; /* gold accent */
+}
+.cover .year {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin-top: 10px;
+}
+.cover .role {
+  margin: 15px 0;
+  font-weight: 300;
+}
+.cover .name {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 20px;
+}
+
+/* About */
+.about {
+  display: flex;
+  align-items: center;
+  padding: 4rem 10%;
+  gap: 2rem;
+}
+.about-img img {
+  width: 280px;
+  border-radius: 10px;
+  opacity: 100%;
+}
+.about-text {
+  max-width: 600px;
+}
+.about-text h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.about-text p {
+  margin-bottom: 1rem;
+}
+.about-text ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* Projects */
+.projects {
+  padding: 4rem 10%;
+ 
+}
+.projects h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+.card {
+  background: #fafafa;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+.card h4 {
+  margin-bottom: 0.5rem;
+  color: #bfa84f;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #111;
+  color: #f8f5ec;
+}
+footer .socials a {
+  color: #bfa84f;
+  text-decoration: none;
+  margin: 0 5px;
+}
+/* ---------- SKILLS ---------- */
+    .skill-bar-title{ font-weight:700; margin-bottom:.25rem;}
+    .progress {
+      height: 12px;
+      border-radius: 999px;
+      background: rgba(0,0,0,0.06);
+      overflow: hidden;
+    }
+    .progress .progress-bar {
+      border-radius: 999px;
+      background: linear-gradient(90deg,var(--emerald), #18422c);
+    }
+
+    /* soft skill badges */
+    .soft-badge{
+      background: linear-gradient(90deg, rgba(214,158,46,0.12), rgba(214,158,46,0.04));
+      color: var(--mustard);
+      padding: .45rem .7rem;
+      border-radius: 999px;
+      font-weight:700;
+      margin-right:.5rem;
+      margin-bottom:.5rem;
+      display:inline-block;
+    }
+    .avatar {
+      width: 120px;       /* size of the avatar */
+      height: 120px;      /* keep it square */
+      border-radius: 50%; /* makes it a circle */
+      object-fit: cover;  /* ensures image fits nicely */
+      border: 2px solid #333; /* optional border */
+    }
+     /* ---------- ACHIEVEMENTS ---------- */
+    .cert-thumb{
+      height:120px;
+      object-fit:cover;
+      width:100%;
+      border-radius:8px;
+      border: 1px solid rgba(11,11,11,0.04);
+      
+    }
+    /* Gallery */
+    .gallery-grid {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+     gap: 15px;
+     padding: 20px;
+    }
+    .gallery-grid img {
+      width: 100%;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+    .gallery-grid img:hover {
+    transform: scale(1.05);
+    }
+    h3{
+      font-family: 'Playfair Display', serif;
+    }
+
+    
+
+
+  </style>
+</head>
+<body>
+    
+  
+
+  
+  <!-- Plastic sheet effect -->
+  <div class="plastic-overlay"></div>
+
+  <!-- Cover Section -->
+  <section class="cover">
+    <div class="cover-text">
+      <h1>PORT<br><span>FOLIO</span></h1>
+      <img src="./WhatsApp Image 2025-09-17 at 10.47.02 PM (1).jpeg" alt="My Avatar" class="avatar">
+      <p class="year">2025</p>
+      <p class="role">Learner • Developer • Artist</p>
+      <h2 class="name">Priyanshi Sharma</h2>
+    </div>
+  </section>
+  
+
+  <!-- About Section -->
+  <section class="about">
+    <div class="about-img">
+      <img src="./WhatsApp Image 2025-09-17 at 10.47.02 PM (1).jpeg" alt="Priyanshi">
+    </div>
+    <div class="about-text">
+      <h3>About Me</h3>
+      <p>
+        I’m Priyanshi, a passionate learner exploring the world of programming, design, and creativity. Skilled in Python, Java, Kotlin, HTML, CSS, Bootstrap, and databases — while also being a dedicated sketch artist and painter.
+      </p>
+      <ul>
+        <li><strong>Education:</strong> Computer Science (B.Voc)</li>
+        <li><strong>Technical Skills:</strong> Python, Java, Kotlin, HTML, CSS, Bootstrap, JavaScript, SQL</li>
+        <li><strong>softwares worked on:</strong> NetBeans, Oracle APEX, Visual studio code, MySQL</li>
+      </ul>
+    </div>
+  </section>
+  <hr>
+  <section id="skills" class="py-5">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h3 style="font-family:  'Playfair Display', serif ;">Skills</h3>
+        <p class="text-muted mb-0">Technical & soft skills — proficiency bars and badges</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- technical -->
+        <div class="col-lg-6">
+          <div class="about-card">
+            <h5>Technical Skills</h5>
+            <div class="mt-3">
+              <!-- skill row -->
+              <div class="mb-3">
+                <div class="d-flex justify-content-between">
+                  <div class="skill-bar-title">HTML & CSS</div>
+                  <div class="text-muted small">90%</div>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width:90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <div class="d-flex justify-content-between">
+                  <div class="skill-bar-title">Bootstrap5</div>
+                  <div class="text-muted small">88%</div>
+                </div>
+                <div class="progress"><div class="progress-bar" style="width:88%"></div></div>
+              </div>
+
+              <div class="mb-3">
+                <div class="d-flex justify-content-between">
+                  <div class="skill-bar-title">JavaScript</div>
+                  <div class="text-muted small">70%</div>
+                </div>
+                <div class="progress"><div class="progress-bar" style="width:70%"></div></div>
+              </div>
+
+              <div class="mb-3">
+                <div class="d-flex justify-content-between">
+                  <div class="skill-bar-title">Python / JDBC & Databases</div>
+                  <div class="text-muted small">80%</div>
+                </div>
+                <div class="progress"><div class="progress-bar" style="width:80%"></div></div>
+              </div>
+
+              <div class="mb-0">
+                <div class="d-flex justify-content-between">
+                  <div class="skill-bar-title">Java(NetBeans)</div>
+                  <div class="text-muted small">75%</div>
+                </div>
+                <div class="progress"><div class="progress-bar" style="width:75%"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- soft skills -->
+        <div class="col-lg-6">
+          <div class="about-card">
+            <h5>Soft Skills</h5>
+            <div class="mt-3">
+              <div class="mb-2">
+                <span class="soft-badge">Creativity</span>
+                <span class="soft-badge">Adaptability</span>
+                <span class="soft-badge">Teamwork</span>
+                <span class="soft-badge">Time Management</span>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr>
+
+  <!-- Projects Grid -->
+  <section class="projects">
+    <h3>Projects Showcase</h3>
+    <div class="grid">
+      <div class="card">
+        <img src="./ss2.png" alt="Project 1">
+        <h4>Portfolio Website</h4>
+        <p>A personal responsive portfolio made with Bootstrap.</p>
+      </div>
+      <div class="card">
+        <img src="./SS.png" alt="Project 2">
+        <h4>Interactive Digital Art site (HTML, CSS & JavaScript)</h4>
+        <p>A web-based gallery transforming hand-drawn sketches into an immersive, interactive experience.</p>
+      </div>
+      <div class="card">
+        <img src="./ss3.png" alt="Project 3">
+        <h4>Responsive College Website Clone – HTML, CSS & JS</h4>
+        <p>A responsive static replica of the National P.G. College homepage, featuring structured content and interactive elements.</p>
+      </div>
+      <div class="card">
+        <img src="./ss4.png" alt="Project 1">
+        <h4>YouTube Video Upload Interface – HTML, CSS & JavaScript</h4>
+        <p>A functional mockup simulating YouTube's video upload interface with drag-and-drop file handling.</p>
+      </div>
+    </div>
+  </section>
+  <hr>
+  <!-- ACHIEVEMENTS / EXPERIENCE -->
+  <section id="achievements" class="py-5">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h3 style="font-family: 'Playfair Display', serif;">Achievements & Certificates</h3>
+        <p class="text-muted mb-0">Highlights from your learning and work</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="about-card text-center">
+            <img src="https://via.placeholder.com/400x270.png?text=Certificate+1" alt="Certificate 1" class="cert-thumb mb-3">
+            <h6 class="mb-1">Full Stack Web Certificate</h6>
+            <p class="small text-muted mb-0">Institution / Platform — Year</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="about-card text-center">
+            <img src="https://via.placeholder.com/400x270.png?text=Certificate+2" alt="Certificate 2" class="cert-thumb mb-3">
+            <h6 class="mb-1">Android Kotlin Basics</h6>
+            <p class="small text-muted mb-0">Institution / Platform — Year</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="about-card text-center">
+            <img src="https://via.placeholder.com/400x270.png?text=Certificate+3" alt="Certificate 3" class="cert-thumb mb-3">
+            <h6 class="mb-1">Database & Oracle Workshop</h6>
+            <p class="small text-muted mb-0">Institution / Platform — Year</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Gallery Section -->
+  <section id="Art gallery">
+    <h3>Gallery</h3>
+    <div class="gallery-grid">
+      <img src="./fp (1).jpeg" alt="Art 1">
+      <img src="./art1.jpeg" alt="Art 2">
+      <img src="./ske.jpeg" alt="Art 3">
+      <img src="./ske(2).jpeg" alt="Art 2">
+      <img src="./ske(3).jpeg" alt="Art 2">
+    </div>
+  </section>
+
+  
+  <!-- CONTACT / FOOTER -->
+  <footer id="contact">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-6">
+          <h4>Contact Me</h4>
+          <p class="text" style="color: #6b6b6b;">Want to collaborate, ask about a project, or see my sketchbook? Send a message — I usually reply within a few days.</p>
+
+          <form id="contactForm" class="row g-3 needs-validation" novalidate>
+            <div class="col-md-6">
+              <label for="name" class="form-label small">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Your name" required>
+              <div class="invalid-feedback">Please enter your name.</div>
+            </div>
+            <div class="col-md-6">
+              <label for="email" class="form-label small">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+              <div class="invalid-feedback">Please enter a valid email.</div>
+            </div>
+            <div class="col-12">
+              <label for="message" class="form-label small">Message</label>
+              <textarea class="form-control" id="message" rows="4" placeholder="Write your message..." required></textarea>
+              <div class="invalid-feedback">Please write a message.</div>
+            </div>
+            <div class="col-12 d-flex gap-2">
+              <button type="submit" class="btn btn-theme" style="color: #f8f5ec;">Send Message</button>
+              <button type="reset" class="btn btn-outline-secondary">Reset</button>
+            </div>
+          </form>
+
+        </div>
+
+        <div class="col-lg-6">
+          <h5>Details & Social</h5>
+          <ul class="list-unstyled mt-3">
+            <li class="mb-2"><i class="bi bi-geo-alt me-2"></i>Lucknow, Uttar Pradesh, India</li>
+            <li class="mb-2"><i class="bi bi-envelope me-2"></i><a href="priyanshi.learns@gmail.com">priyanshi.learns@gmail.com</a></li>
+            <li class="mb-2"><i class="bi bi-phone me-2"></i>+91 80047 77888</li>
+          </ul>
+
+          <div class="mt-3">
+            <a class="social-icon" href="https://www.github.com/Bizzy-Boo05" title="GitHub"><i class="bi bi-github"></i></a>
+            <a class="social-icon" href="#" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a class="social-icon" href="https://instagram.com/tinted_truths" title="Instagram"><i class="bi bi-instagram"></i></a>
+            <a class="social-icon" href="#" title="Twitter"><i class="bi bi-twitter"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+      
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS (bundle includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Small JS: contact validation and year -->
+  <script>
+    // populate copyright year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // bootstrap form validation (client-side)
+    (function () {
+      'use strict'
+      const forms = document.querySelectorAll('.needs-validation')
+      Array.from(forms).forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          } else {
+            event.preventDefault()
+            // Here you can add AJAX/fetch to send form data to backend or email service
+            alert('Thanks — message sent (demo). Replace alert with real submit logic.');
+            form.reset();
+          }
+          form.classList.add('was-validated')
+        }, false)
+      })
+    })()
+  </script>
+</body>
+</html>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Priyanshi Sharma | Connect with me:</p>
+    <div class="socials">
+      <a href="#">LinkedIn</a> • 
+      <a href="https://www.github.com/Bizzy-Boo05">GitHub</a> • 
+      <a href="https://instagram.com/tinted_truths">Instagram</a>
+    </div>
+  </footer>
+</body>
+</html>
+
+    
+</body>
+</html>
