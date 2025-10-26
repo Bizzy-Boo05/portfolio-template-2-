@@ -25,7 +25,7 @@ This project is designed to showcase your work, skills, and creativity with smoo
 
 🖼️ Preview
 
-> 🖤 Live Demo: [View Portfolio](https://bizzy-boo05.github.io/portfolio-template-2/)  
+> 🖤 Live Demo: https://bizzy-boo05.github.io/portfolio-template-2/
 *(Click to open in a new tab)*
 
 ---
@@ -33,18 +33,43 @@ This project is designed to showcase your work, skills, and creativity with smoo
 📂 Folder Structure
 
 portfolio-template-2-
+
+
 ├── Clear Plastic Vinyl - Gauge 8.jpeg
+  
 ├── Gemini_Generated_Image_a2lbh5a2lbh5a2lb.png
+
+
 ├── SS.png          # Images
+
+
 ├── WhatsApp Image 2025-09-17 at 10.47.02 PM (1).jpeg
+
+
 ├── art1.jpeg
+
+
 ├── fp (1).jpeg
+
+
 ├── index.html      # Main HTML file
+
+
 ├── ske(2).jpeg     # Images
+
+
 ├── ske(3).jpeg     # Images
+
+
 ├── ske.jpeg        # Images
+
+
 ├── ss2.png         # Images
+
+
 ├── ss3.png         # Images
+
+
 └── ss4.png         # Images
 
 ---
@@ -52,6 +77,10 @@ portfolio-template-2-
 👩‍💻 Author
 
 Priyanshi Sharma
+
+
 📧 priyanshi.learns@gmail.com
+
+
 🌐 https://github.com/Bizzy-Boo05
 
